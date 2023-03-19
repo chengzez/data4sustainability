@@ -89,9 +89,10 @@ $$
 | $R^2$  | 0.26  |
 | MAE    | 41.34 |
 
-## Residual Plot
-
+## Graph of Year Built vs EUI
 ![](reports/figures/lin_reg.svg)
+
+## Residual Plot
 
 ![](reports/figures/lin_reg_res.svg)
 
