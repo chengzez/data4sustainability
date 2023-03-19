@@ -24,6 +24,7 @@ dependencies:
   - cycler=0.11.0=pyhd8ed1ab_0
   - debugpy=1.6.6=py39h23fbdae_0
   - decorator=5.1.1=pyhd8ed1ab_0
+  - et_xmlfile=1.1.0=pyhd8ed1ab_0
   - executing=1.2.0=pyhd8ed1ab_0
   - fonttools=4.39.2=py39h02fc5c5_0
   - freetype=2.12.1=hd633e50_1
@@ -71,6 +72,7 @@ dependencies:
   - nest-asyncio=1.5.6=pyhd8ed1ab_0
   - numpy=1.24.2=py39hff61c6a_0
   - openjpeg=2.5.0=hbc2ba62_2
+  - openpyxl=3.1.1=py39h02fc5c5_0
   - openssl=3.1.0=h03a7124_0
   - packaging=23.0=pyhd8ed1ab_0
   - pandas=1.5.3=py39hde7b980_0
@@ -130,5 +132,8 @@ dependencies:
   - zstd=1.5.2=hf913c23_6
   - pip:
       - googlemaps==4.10.0
+      - levenshtein==0.20.9
       - python-dotenv==1.0.0
-prefix: /Users/alilavaee/mambaforge/envs/data4sustainability
+      - python-levenshtein==0.20.9
+      - rapidfuzz==2.13.7
+      - thefuzz==0.19.0

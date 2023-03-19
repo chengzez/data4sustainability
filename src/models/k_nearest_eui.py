@@ -41,14 +41,14 @@ for k in range(1, 11):
     print(f"Performance for {k} nearest neighbors:")
     print(f"MAE: {MAE}")
     
-fig = plt.figure(figsize=(7.5, 10))
+fig = plt.figure(figsize=(10, 5))
 ax = fig.add_subplot(111)
 ax.plot(metrics['k'], metrics['MAE'])
 ax.set_xlabel('Number of Neighbors (k)')
 ax.set_ylabel('Mean Absolute Error (MAE)')
 ax.set_title('K-Nearest Neighbors with Different K Values')
 # plt.show()
-fig.savefig('../../reports/figures/knn.svg', bbox_inches='tight')
+fig.savefig('../../reports/figures/knn_wide.svg', bbox_inches='tight')
     
 
     
