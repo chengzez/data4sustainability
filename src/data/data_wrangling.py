@@ -3,7 +3,7 @@ import numpy as np
 from pathlib import Path
 from thefuzz import process
 import re
-from get_distances import find_dist_to_GSU
+from src.data.get_distances import find_dist_to_GSU
 
 
 DATA_PATH = Path("../../data")
