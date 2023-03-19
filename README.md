@@ -117,6 +117,9 @@ $$
 
 ![](reports/figures/shap_knn.svg)
 
+# Predictions
+Can be found in the `submissions` folder and the file called `final_predictions.csv`
+
 # Takeaways
 * Promising performance for small subset of data and potentially erroneous samples
 * With more data and features algorithms such as gradient boosting (XGBoost) and Neural Networks can be explored
