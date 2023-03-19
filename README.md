@@ -52,6 +52,8 @@ $$
 
 ![](reports/figures/feature.svg)
 
+![](reports/figures/energy_usage.png)
+
 ## Pearson Correlations of Features with Energy Use Intensity (EUI)
 
 ![](reports/figures/corr_eui.svg)
@@ -60,8 +62,6 @@ $$
 * Location does not affect energy yse intensity (EUI)
 * Year built and stories of a building are highly correlated with EUI
 * EUI values range from 45 to 650
-
-![](reports/figures/hist_eui.svg)
 
 # Challenges
 * Small dataset (125 values after preprocessing)
@@ -82,16 +82,45 @@ $$
   * Disadvantages: non-parametric algorithm (model grows with dataset size)
 
 # Results
-* Linear Regression performed best on individually predicting:
-  * electricity use (kBtu)
-  * gas use (kBtu)
-  * natural oil use (kBtu)
-* Support Vector Regression performs well in predicting energy use intensity (EUI) 
-  * Validation MAE = 49.91
-* K-Nearest Neighbors performs best in predicting energy use intensity (EUI)
-  * Validation MAE = 42.49 
+* Simple Linear Regression performs well predicting EUI with covariate, year built:
+
+| Metric | Value |
+| ------ | ----- |
+| $R^2$  | 0.26  |
+| MAE    | 41.34 |
+
+## Residual Plot
+
+![](reports/figures/lin_reg.svg)
+
+![](reports/figures/lin_reg_res.svg)
+
+![](reports/figures/shap_lin_reg.svg)
+ 
+* Support Vector Regression performs well in predicting energy use intensity (EUI):
+
+| Metric | Value                            |
+| ------ | -------------------------------- |
+| $R^2$  | -0.31 (arbitrarily worse than 0) |
+| MAE    | 49.91                            |
+
+![](reports/figures/shap_svr.svg)
+
+* K-Nearest Neighbors performs best in predicting energy use intensity (EUI):
+
+| Metric | Value |
+| ------ | ----- |
+| $R^2$  | 0.44  |
+| MAE    | 42.49 |
   
 ![](reports/figures/knn_wide.svg)
+
+![](reports/figures/shap_knn.svg)
+
+# Takeaways
+* Promising performance for small subset of data and potentially erroneous samples
+* With more data and features algorithms such as gradient boosting (XGBoost) and Neural Networks can be explored
+
 
 
 
